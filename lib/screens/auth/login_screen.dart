@@ -103,10 +103,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             onPressed: () async {
                               if (_emailController.text.isNotEmpty &&
                                   _passwordController.text.isNotEmpty) {
-                                // final response = await auth.login(UserModel(
-                                //     email: _emailController.text,
-                                //     password: _passwordController.text));
-                                // print(response);
+                                final response = await auth.login(UserModel(
+                                    email: _emailController.text,
+                                    password: _passwordController.text));
+                                print(response);
                                 Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
