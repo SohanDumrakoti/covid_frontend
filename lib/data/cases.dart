@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:coronatracker/constant.dart';
 import 'package:coronatracker/models/cases_model.dart';
 import 'package:http/http.dart' as http;
 

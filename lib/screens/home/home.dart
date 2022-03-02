@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:coronatracker/data/auth.dart';
 import 'package:coronatracker/drawer/navdrawer.dart';
+import 'package:coronatracker/screens/auth/login_screen.dart';
 import 'package:coronatracker/screens/home/body_container.dart';
 import 'package:coronatracker/values/colors_values.dart';
 import 'package:flutter/material.dart';
@@ -48,6 +49,10 @@ class _HomePageState extends State<HomePage> {
                       child: Text("Logout"),
                       onPressed: () async {
                         await auth.logout();
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginScreen()));
                       },
                     ),
                   ),

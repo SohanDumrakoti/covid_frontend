@@ -49,7 +49,7 @@ class _FAQState extends State<FAQ> {
       body: Padding(
         padding: EdgeInsets.all(10.0),
         child: ListView.builder(
-          itemCount: faqData == null ? 0 : faqData.length,
+          itemCount: faqData.length,
           itemBuilder: (context, index) {
             return Card(
               color: ColorsValues.defaultColor,

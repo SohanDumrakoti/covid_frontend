@@ -90,7 +90,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                     email: _emailController.text,
                                     password: _passwordController.text,
                                   ));
-                                  print(response);
+                                  print("fasd" + response);
                                 } else {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                       SnackBar(

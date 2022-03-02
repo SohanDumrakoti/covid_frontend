@@ -19,10 +19,9 @@ class Auth {
       print(res.body);
       if (res.statusCode == 200) {
         final data = jsonDecode(res.body);
-        print(data);
         UserModel userd = UserModel.fromJson(data);
         await TokenStorage.saveToken(userd.token!);
-        return "success";
+        return userd;
       } else {
         return Future.error("Error occurred");
       }
